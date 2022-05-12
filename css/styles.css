@@ -1,0 +1,156 @@
+:root {
+  --main-bg-color: #1f2937;
+  --navlink-color: #e5e7eb;
+  --font-lightcolor: #f9faf8;
+  --font-lightcolor-alt: #e5e7eb;
+  --button-color: #3882f6;
+  --quote-bg-color: #e5e7eb;
+  --quote-text-color: #1f2937;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: var(--main-bg-color);
+  height: 3em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px;
+}
+
+.header-logo {
+  font-size: 24px;
+  color: var(--font-lightcolor);
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: var(--navlink-color);
+}
+
+.main-section {
+  background-color: var(--main-bg-color);
+  display: flex;
+  gap: 32px;
+  padding: 64px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main-left {
+  width: 450px;
+  color: var(--font-lightcolor-alt);
+  font-size: 18px;
+}
+
+.main-left h1 {
+  color: var(--font-lightcolor);
+  font-size: 48px;
+  margin: 0;
+}
+.main-left button {
+  background-color: var(--button-color);
+  border-radius: 8px;
+  border-style: none;
+  color: var(--font-lightcolor);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 8px 32px;
+}
+
+.img-placeholder {
+  width: 450px;
+  height: 250px;
+  background-color: rgb(160, 160, 160);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px;
+  gap: 36px;
+}
+
+.info-boxes {
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 auto;
+  width: 200px;
+}
+
+.info-text {
+  text-align: center;
+}
+
+.info-img {
+  width: 150px;
+  height: 150px;
+  border: 2px solid var(--button-color);
+  border-radius: 8px;
+}
+
+.quote-section {
+  height: 400px;
+  background-color: var(--quote-bg-color);
+  color: var(--quote-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.quote-text {
+  font-size: 26px;
+  font-weight: 100;
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.quote-author {
+  font-weight: 700;
+  margin-left: 300px;
+}
